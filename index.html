@@ -8,9 +8,23 @@
 </head>
 <body>
 
+    <svg viewBox="0 0 600 300">
 
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+            The end
+            </text>
+        </symbol>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="app.js"></script>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+
+    </svg>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
