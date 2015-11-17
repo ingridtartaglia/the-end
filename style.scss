@@ -2,7 +2,7 @@
 
 .text {
     fill: none;
-    stroke-width: 6;
+    stroke-width: 2;
     stroke-linejoin: round;
     stroke-dasharray: 70 330;
     stroke-dashoffset: 0;
@@ -11,30 +11,30 @@
 }
 
 .text:nth-child(5n + 1) {
-    stroke: #F2385A;
+    stroke: #D1F2A5;
     -webkit-animation-delay: -1.2s;
     animation-delay: -1.2s;
 }
 .text:nth-child(5n + 2) {
-    stroke: #F5A503;
+    stroke: #EFFAB4;
     -webkit-animation-delay: -2.4s;
     animation-delay: -2.4s;
 }
 
 .text:nth-child(5n + 3) {
-    stroke: #E9F1DF;
+    stroke: #FFC48C;
     -webkit-animation-delay: -3.6s;
     animation-delay: -3.6s;
 }
 
 .text:nth-child(5n + 4) {
-    stroke: #56D9CD;
+    stroke: #FF9F80;
     -webkit-animation-delay: -4.8s;
     animation-delay: -4.8s;
 }
 
 .text:nth-child(5n + 5) {
-    stroke: #3AA1BF;
+    stroke: #F56991;
     -webkit-animation-delay: -6s;
     animation-delay: -6s;
 }
@@ -54,9 +54,12 @@ html, body { height: 100%; }
 body {
     background: #111;
     background-size: .2em 100%;
-    font: 14.5em/1 Open Sans, Impact;
+    font: 10em/1 Open Sans, Impact;
     text-transform: uppercase;
     margin: 0;
+    @media screen and (max-width: 768px) {
+        font: 12em/1 Open Sans, Impact;
+    }
 }
 
 svg {
